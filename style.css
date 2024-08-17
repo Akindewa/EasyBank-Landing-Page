@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     overflow-x: hidden;
 }
 
@@ -91,14 +90,14 @@
 }
 
 .header-toggle-btn-hamburger{
-   background: url(/images/icon-hamburger.svg);
+   background: url(images/icon-hamburger.svg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 
 .header-toggle-btn-x{
-   background: url(/images/icon-close.svg);
+   background: url(images/icon-close.svg);
    background-repeat: no-repeat;
    background-position: center;
 }
@@ -281,6 +280,7 @@
  .body-Header{
   text-align: left;
   font-size: 2.7rem;
+  color: red;
  }
 
  .body-Paragraph{
