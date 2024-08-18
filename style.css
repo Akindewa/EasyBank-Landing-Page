@@ -128,7 +128,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background: red;
+    background: darkgray;
 }
 
 .Nav-Header-List-mobile{
