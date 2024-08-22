@@ -182,8 +182,8 @@ body{
   color: hsl(233, 8%, 62%);
   font-weight: 400;
 }
-
-footer{
+/* For the mobile version of my project and really affecting my desktop version */
+/* footer{
    flex-direction: row;
    flex-wrap: nowrap;
    justify-content: space-evenly;
@@ -239,18 +239,19 @@ footer{
 
 .footer-copyright-two{
   margin-left: -1rem;
-}
+} */
+
 
 
 /* Just in case */
 .header-toggle-btn{
-    height: 30px;
-    aspect-ratio: 1/1;
-    top: calc(50px*.3);
-    right: 8%;
-    border: none;
-    position: absolute;
-    cursor: pointer;
+   height: 30px;
+   aspect-ratio: 1/1;
+   top: calc(50px*.3);
+   right: 8%;
+   border: none;
+   position: absolute;
+   cursor: pointer;
 }
 
 .header-toggle-btn-hamburger{
@@ -302,7 +303,7 @@ footer{
    flex-flow: column nowrap;
    justify-content: space-evenly;
    align-items:  center;
-
+   cursor: pointer;
 }
 
 .Nav-Header-List-Item-mobile{
@@ -339,6 +340,11 @@ footer{
   
 .header-toggle-btn{ display: none;}
 .secondContainer { display: none;}
+footer{display: none;}
+.footer-section{ display: none;}
+.social{ display: none;}
+.footer-nav-list{ display: none;}
+.footer-nav-list-link{ display: none;}
 
  .wrapper{
    padding: 0;
@@ -367,6 +373,7 @@ footer{
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-evenly;
+   cursor: pointer;
  }
 
  .Nav-Header-List-Item{
@@ -536,63 +543,79 @@ footer{
    line-height: 1.08rem;
   }
 
-  footer{
-   /* padding: 1% 5%; */
-   /* height: 200px; */
-   /* width: 100%; */
-   /* position: relative; */
-   /* display: flex; */
-   /* flex-flow: row nowrap; */
-   /* justify-content: flex-start; */
-   /* align-items: center; */
-    /* background-color: hsl(233, 26%, 24%); */
-  }
-
-  .footer-section{
-    /* width: clamp(150px,10%, 250px); */
-    /* height: 50%; */
-    /* justify-content: space-between; */
-    /* align-items: flex-start;         */
-  }
-
-  .footer-nav{ 
-   /* margin-left: 10%; */
-   /* height: 60%; */
-   /* width: clamp(450px, 30%, 500px); */
+  footer {
+   display: flex;
+   gap: 4rem;
+   padding-top: 3rem;
+   padding-bottom: 2rem;
+   background-color:   hsl(233, 26%, 24%);
+   width: 100%;
 }
 
-.footer-nav-list{
-   /* min-height: 100px; */
-   /* height: 100%; */
-   /* display: flex; */
-   /* flex-flow: column wrap; */
-   /* align-items: flex-start; */
+.footer-logo{
+   margin-bottom: 2rem; 
 }
 
-/* .footer-nav-list-item{ margin: 2% 0;} */
+.footer-section {
+   gap: 2rem;
+   margin-left: 6rem;
+}
 
-/* .footer-nav-list-link{ text-align: left;} */
+.social {
+   display: flex;
+   gap: 0.6rem;
+   width: 100%;
+}
 
-.footer-nav-list-link:hover{
-   color: hsl(136, 65%, 51%);
+.footer-nav{
+   margin-left: 6rem;
+   margin-right: 15rem;
+   display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.footer-nav-list {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap: 1.2rem; 
+   column-gap: 5rem;
+   font-size: 1rem ;
+   list-style: none;
+   padding: 0;
+   margin: 0; 
+}
+
+.footer-nav-list-link {
+   text-decoration: none;
+   color: white; 
    cursor: pointer;
 }
 
-.footer-copyright{
-   /* display: block; */
-   /* align-items: flex-end; */
-   /* position: relative; */
-   /* right: -17%; */
-   /* gap: 5rem; */
+.footer-nav-list-link:hover{
+   color: hsl(136, 65%, 51%);
 }
-   
-/* .footer-copyright-two{
-   margin-top: 10px;
-} */
 
+.social:hover{
+   color: hsl(136, 65%, 51%);
+}
 
+.footer-btn{
+   margin-bottom: 1.3rem;
+}
 
+.footer-copyright{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
 
+.footer-copyright-two{
+   color: white;
+   margin: 0;
+   flex-grow: 1;
+   text-align: right;
+}
 
 }
 
